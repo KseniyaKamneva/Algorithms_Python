@@ -22,13 +22,15 @@ except ValueError:
 if flag == True:
     first_max = max(first_num, second_num)
     second_max = max(second_num, third_num)
-    print('Среднее число равно ', min(first_max, second_max))
+    third_max = max(first_num, third_num)
+    print('Среднее число равно ', min(first_max, second_max, third_max))
 
 #Если требуется узнать порядковый номер числа, то решение будет таким:
 if flag == True:
     first_max = max(first_num, second_num)
     second_max = max(second_num, third_num)
-    min_max = min(first_max, second_max)
+    third_max = max(first_num, third_num)
+    min_max = min(first_max, second_max, third_max)
     if second_num == min_max:
         print('Средним является второе число ', second_num)
     elif third_num == min_max:
